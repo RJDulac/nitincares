@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nitin Cares</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+      <nav class="main-nav" id="main-nav">
+          <img src="img/close.svg" alt="" class="close-btn" id="close-menu">
+          <ul class="nav-menu">
+              <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">The Journey</a></li>
+              <li class="nav-item"><a href="#journey" class="nav-link">Currently</a></li>
+              <li class="nav-item"><a href="#currently" class="nav-link">Contact</a></li>
+          </ul>
+      </nav>
+    <nav>
+    <header>
+      <div class="nav-mobile-wrapper">
+        <div class="logo">Nitin Samtani</div>
+        <img src="img/hamburger.svg" alt="" class="menu-btn" id="open-menu" />
+      </div>
+      <div class="img-wrapper">
+        <img name="slide" />
+      </div>
+    </header>
+    <section id="pilot">
+      <h2>Story featured in Virginia Beach's newspaper The Virginian Pilot</h2>
+      <img src="img/pilot.gif" alt="pilot" />
+      <div class="viewer-wrapper">
+        <canvas id="pdf-render"></canvas>
+        <div class="bar">
+          <button class="btn" id="prev-page">
+            <i class="fas fa-arrow-circle-left"></i> Prev Page
+          </button>
+          <button class="btn" id="next-page">
+            <i class="fas fa-arrow-circle-right"></i> Next Page
+          </button>
+          <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
